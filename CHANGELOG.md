@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.1.1
+
+- `migrate` no longer suggests `--plugins` when you already passed it.
+- Line endings are forced to LF, so embedded assets match on Windows checkouts.
+- The release workflow fetches checksums with `gh`, so packaging works in any repository.
+- READMEs now explain how Rubio-IA works with noah.
+
 ## v0.1.0
 
 First release.
