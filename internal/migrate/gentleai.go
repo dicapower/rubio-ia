@@ -115,7 +115,11 @@ func GentleAI(home string, o Options, out io.Writer) error {
 		return err
 	}
 	fmt.Fprintf(out, "\nDone. Backup %s (undo with: rubio restore %s)\n", sess.ID(), sess.ID())
-	fmt.Fprintln(out, "Left alone: ~/.gentle-ai (its state and backups), other skills, and the memory plugin unless --plugins was given.")
+	left := "Left alone: ~/.gentle-ai (its state and backups) and your other skills."
+	if !o.Plugins {
+		left += " The Engram plugin was not touched (add --plugins to disable it)."
+	}
+	fmt.Fprintln(out, left)
 	fmt.Fprintln(out, "Next: rubio setup, then restart your agent.")
 	return nil
 }
