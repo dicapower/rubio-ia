@@ -1,0 +1,80 @@
+name: release
+on:
+  push:
+    tags: ["v*"]
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing tag to build and publish
+        required: true
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.tag || github.ref }}
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - run: go vet ./... && go test ./...
+      - name: Build
+        run: |
+          GITHUB_REF_NAME=${{ github.event.inputs.tag || github.event.release.tag_name || github.ref_name }}
+          echo "TAG=$GITHUB_REF_NAME" >> "$GITHUB_ENV"
+          mkdir dist
+          for t in linux/amd64 linux/arm64 darwin/amd64 darwin/arm64 windows/amd64; do
+            os=${t%/*}; arch=${t#*/}
+            ext=""; [ "$os" = windows ] && ext=".exe"
+            d=rubio-${GITHUB_REF_NAME}-${os}-${arch}
+            mkdir "$d"
+            CGO_ENABLED=0 GOOS=$os GOARCH=$arch go build -trimpath -ldflags "-s -w -X main.version=${GITHUB_REF_NAME}" -o "$d/rubio$ext" ./cmd/rubio
+            cp LICENSE NOTICE README.md "$d/"
+            if [ "$os" = windows ]; then zip -qr "dist/$d.zip" "$d"
+            else tar -czf "dist/$d.tar.gz" "$d"; fi
+          done
+          (cd dist && sha256sum * > SHA256SUMS)
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          awk -v v="${TAG#v}" '$0 ~ "^## v"v"$"{f=1;next} /^## v/{f=0} f' CHANGELOG.md > notes.md
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" dist/* --clobber
+          else
+            gh release create "$TAG" dist/* --title "rubio $TAG" --notes-file notes.md
+          fi
+  packaging:
+    # Keeps `brew install`/`brew upgrade` and Scoop pointing at the newest
+    # release: regenerates Formula/rubio.rb and bucket/rubio.json from the
+    # checksums of the files just published. Only for the latest release, so
+    # re-running an old tag cannot move the package backwards.
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Update Homebrew formula and Scoop manifest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG=${{ github.event.inputs.tag || github.event.release.tag_name || github.ref_name }}
+          latest=$(gh api "repos/${{ github.repository }}/releases/latest" --jq .tag_name)
+          if [ "$TAG" != "$latest" ]; then echo "$TAG is not the latest release ($latest); leaving packaging alone"; exit 0; fi
+          curl -fsSL -o "$RUNNER_TEMP/SHA256SUMS" "https://github.com/${{ github.repository }}/releases/download/$TAG/SHA256SUMS"
+          sh scripts/packaging.sh "$TAG" "$RUNNER_TEMP/SHA256SUMS"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Formula bucket
+          if git diff --cached --quiet; then echo "packaging already up to date"; exit 0; fi
+          git commit -m "Packaging: rubio $TAG"
+          for i in 1 2 3; do
+            git pull -q --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 5
+          done
+          exit 1
