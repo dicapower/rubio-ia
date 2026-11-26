@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+<rect width="1280" height="640" fill="#fbf8f2"/>
+<g transform="translate(147.84000000000003 88) scale(0.62)">
+  <title>Rubio-IA</title>
+  <rect width="512" height="512" rx="96" fill="#e6defa"/>
+  <!-- chest and shoulders -->
+  <path fill="#c98a4b" d="M 128 512 C 128 430 170 392 256 392 C 342 392 384 430 384 512 Z"/>
+  <path fill="#ecd2a8" d="M 220 512 C 222 452 238 420 256 420 C 274 420 290 452 292 512 Z"/>
+  <!-- ears (upright) -->
+  <path fill="#c98a4b" stroke="#c98a4b" stroke-width="10" stroke-linejoin="round" d="M 156 236 L 128 66 L 252 160 Z"/>
+  <path fill="#7a4a26" d="M 164 206 L 148 108 L 224 164 Z"/>
+  <path fill="#c98a4b" stroke="#c98a4b" stroke-width="10" stroke-linejoin="round" d="M 356 236 L 384 66 L 260 160 Z"/>
+  <path fill="#7a4a26" d="M 348 206 L 364 108 L 288 164 Z"/>
+  <!-- head -->
+  <ellipse cx="256" cy="272" rx="112" ry="108" fill="#d99a58"/>
+  <!-- forehead blaze shading -->
+  <path fill="#e8b676" d="M 256 168 C 276 190 282 226 272 258 L 240 258 C 230 226 236 190 256 168 Z"/>
+  <!-- dark muzzle -->
+  <path fill="#3b2b26" d="M 198 316 C 198 282 224 272 256 272 C 288 272 314 282 314 316 C 314 360 290 384 256 384 C 222 384 198 360 198 316 Z"/>
+  <!-- dark eye lines -->
+  <path d="M 190 262 C 200 252 214 252 224 260 M 288 260 C 298 252 312 252 322 262" stroke="#3b2b26" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <!-- eyes -->
+  <ellipse cx="207" cy="270" rx="11" ry="13" fill="#1d1512"/>
+  <ellipse cx="305" cy="270" rx="11" ry="13" fill="#1d1512"/>
+  <circle cx="211" cy="265" r="3.5" fill="#fff"/>
+  <circle cx="309" cy="265" r="3.5" fill="#fff"/>
+  <!-- nose -->
+  <path fill="#120d0b" d="M 232 300 C 232 288 244 284 256 284 C 268 284 280 288 280 300 C 280 314 268 322 256 322 C 244 322 232 314 232 300 Z"/>
+  <ellipse cx="248" cy="293" rx="7" ry="3.5" fill="#fff" opacity="0.35"/>
+  <!-- mouth -->
+  <path d="M 256 322 L 256 340 M 256 340 C 244 356 228 356 220 346 M 256 340 C 268 356 284 356 292 346" stroke="#120d0b" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- collar and tag -->
+  <path fill="#aeb7c6" d="M 172 392 C 214 414 298 414 340 392 L 346 410 C 300 434 212 434 166 410 Z"/>
+  <circle cx="256" cy="434" r="15" fill="#4f93de"/>
+  <circle cx="256" cy="434" r="6" fill="#cfe3fa"/>
+
+</g><g transform="translate(481.28000000000003 88) scale(0.62)">
+  <title>Roma</title>
+  <rect width="512" height="512" rx="96" fill="#d9e6f2"/>
+  <!-- chest and shoulders -->
+  <path fill="#566070" d="M 100 512 C 100 426 160 388 256 388 C 352 388 412 426 412 512 Z"/>
+  <path fill="#f2f4f7" d="M 206 512 C 206 454 228 418 256 418 C 284 418 306 454 306 512 Z"/>
+  <!-- ears -->
+  <path fill="#4b5563" stroke="#4b5563" stroke-width="10" stroke-linejoin="round" d="M 150 236 L 142 128 L 244 172 Z"/>
+  <path fill="#7b6a6e" d="M 162 214 L 158 150 L 218 174 Z"/>
+  <path fill="#4b5563" stroke="#4b5563" stroke-width="10" stroke-linejoin="round" d="M 362 236 L 370 128 L 268 172 Z"/>
+  <path fill="#7b6a6e" d="M 350 214 L 354 150 L 294 174 Z"/>
+  <!-- head -->
+  <path fill="#566070" d="M 256 166 C 346 166 404 212 404 274 C 404 350 344 398 256 398 C 168 398 108 350 108 274 C 108 212 166 166 256 166 Z"/>
+  <!-- lighter muzzle -->
+  <path fill="#6d7888" d="M 172 324 C 172 292 208 284 256 284 C 304 284 340 292 340 324 C 340 368 304 392 256 392 C 208 392 172 368 172 324 Z"/>
+  <!-- brows -->
+  <path d="M 178 240 C 192 230 210 230 224 238 M 288 238 C 302 230 320 230 334 240" stroke="#3a424f" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <!-- eyes -->
+  <ellipse cx="206" cy="262" rx="12" ry="13" fill="#2a1d17"/>
+  <ellipse cx="306" cy="262" rx="12" ry="13" fill="#2a1d17"/>
+  <circle cx="210" cy="257" r="4" fill="#fff"/>
+  <circle cx="310" cy="257" r="4" fill="#fff"/>
+  <!-- nose -->
+  <path fill="#14161b" d="M 224 304 C 224 290 240 284 256 284 C 272 284 288 290 288 304 C 288 320 272 328 256 328 C 240 328 224 320 224 304 Z"/>
+  <ellipse cx="246" cy="295" rx="8" ry="3.5" fill="#fff" opacity="0.3"/>
+  <!-- mouth -->
+  <path d="M 256 328 L 256 346 M 256 346 C 240 364 214 362 204 348 M 256 346 C 272 364 298 362 308 348" stroke="#14161b" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- chain collar and tag -->
+  <path fill="#c3c9d3" d="M 150 396 C 204 424 308 424 362 396 L 368 414 C 310 444 202 444 144 414 Z"/>
+  <circle cx="256" cy="446" r="14" fill="#9aa3b2"/>
+  <circle cx="256" cy="446" r="5" fill="#e6e9ef"/>
+
+</g><g transform="translate(814.72 88) scale(0.62)">
+  <title>noah</title>
+  <rect width="512" height="512" rx="96" fill="#f3ead7"/>
+  <!-- chest and shoulders -->
+  <path fill="#1c1c21" d="M 110 512 C 110 424 164 386 256 386 C 348 386 402 424 402 512 Z"/>
+  <ellipse cx="226" cy="466" rx="13" ry="18" fill="#b8692f"/>
+  <ellipse cx="286" cy="466" rx="13" ry="18" fill="#b8692f"/>
+  <!-- hanging ears -->
+  <path fill="#2a2a31" stroke="#2a2a31" stroke-width="10" stroke-linejoin="round" d="M 158 196 C 112 196 94 262 116 322 C 148 316 176 282 184 236 Z"/>
+  <path fill="#2a2a31" stroke="#2a2a31" stroke-width="10" stroke-linejoin="round" d="M 354 196 C 400 196 418 262 396 322 C 364 316 336 282 328 236 Z"/>
+  <!-- head -->
+  <path fill="#1c1c21" d="M 256 148 C 332 148 386 196 386 266 C 386 338 336 396 256 396 C 176 396 126 338 126 266 C 126 196 180 148 256 148 Z"/>
+  <!-- tan muzzle -->
+  <path fill="#b8692f" d="M 186 322 C 186 292 214 284 256 284 C 298 284 326 292 326 322 C 326 366 296 390 256 390 C 216 390 186 366 186 322 Z"/>
+  <!-- black nose bridge -->
+  <path fill="#1c1c21" d="M 232 232 L 280 232 C 284 262 290 282 296 300 L 216 300 C 222 282 228 262 232 232 Z"/>
+  <!-- tan eyebrow dots -->
+  <ellipse cx="206" cy="226" rx="13" ry="9" fill="#b8692f"/>
+  <ellipse cx="306" cy="226" rx="13" ry="9" fill="#b8692f"/>
+  <!-- eyes -->
+  <ellipse cx="208" cy="258" rx="12" ry="13" fill="#4a3022"/>
+  <ellipse cx="304" cy="258" rx="12" ry="13" fill="#4a3022"/>
+  <circle cx="212" cy="253" r="4" fill="#fff"/>
+  <circle cx="308" cy="253" r="4" fill="#fff"/>
+  <!-- nose -->
+  <path fill="#0c0c0f" d="M 226 304 C 226 290 240 284 256 284 C 272 284 286 290 286 304 C 286 320 272 328 256 328 C 240 328 226 320 226 304 Z"/>
+  <ellipse cx="246" cy="295" rx="8" ry="3.5" fill="#fff" opacity="0.3"/>
+  <!-- mouth -->
+  <path d="M 256 328 L 256 346 M 256 346 C 242 364 220 362 212 350 M 256 346 C 270 364 292 362 300 350" stroke="#0c0c0f" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- collar and bone tag -->
+  <path fill="#6b7280" d="M 166 394 C 212 418 300 418 346 394 L 352 412 C 304 438 208 438 160 412 Z"/>
+  <g fill="#e6e9ef">
+    <rect x="240" y="428" width="32" height="14" rx="7"/>
+    <circle cx="238" cy="430" r="7"/><circle cx="238" cy="440" r="7"/>
+    <circle cx="274" cy="430" r="7"/><circle cx="274" cy="440" r="7"/>
+  </g>
+
+</g>
+<text x="640.0" y="489.44" text-anchor="middle" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-weight="bold" font-size="64" fill="#1c1c21">Rubio-IA + noah</text>
+<text x="640.0" y="539.44" text-anchor="middle" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="30" fill="#4b5563">How your coding agent works, and what it remembers.</text>
+</svg>
