@@ -122,6 +122,10 @@ It removes the Gentle-AI blocks from `CLAUDE.md`, unsets the Gentleman output st
 - It cannot make an agent obey. It makes the instructions short enough to be read.
 - Memory needs [noah](https://github.com/dicapower/noah); without it that section is ignored.
 
+## Brand
+
+Logos, the shared social preview and the colour palette are described in [assets/BRAND.md](assets/BRAND.md).
+
 ## Development
 
 ```sh

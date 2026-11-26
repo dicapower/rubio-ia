@@ -122,6 +122,10 @@ Quita los bloques de Gentle-AI de `CLAUDE.md`, desactiva el estilo de salida Gen
 - No puede obligar a un agente a obedecer. Hace que las instrucciones sean lo bastante cortas para que se lean.
 - La memoria necesita [noah](https://github.com/dicapower/noah); sin él esa sección se ignora.
 
+## Marca
+
+Los logos, la vista previa compartida y la paleta de colores están descritos en [assets/BRAND.md](assets/BRAND.md) (en inglés).
+
 ## Desarrollo
 
 ```sh

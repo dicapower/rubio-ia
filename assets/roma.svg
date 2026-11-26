@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Roma: a blue-grey pit bull with a white chest">
+  <title>Roma</title>
+  <rect width="512" height="512" rx="96" fill="#d9e6f2"/>
+  <!-- chest and shoulders -->
+  <path fill="#566070" d="M 100 512 C 100 426 160 388 256 388 C 352 388 412 426 412 512 Z"/>
+  <path fill="#f2f4f7" d="M 206 512 C 206 454 228 418 256 418 C 284 418 306 454 306 512 Z"/>
+  <!-- ears -->
+  <path fill="#4b5563" stroke="#4b5563" stroke-width="10" stroke-linejoin="round" d="M 150 236 L 142 128 L 244 172 Z"/>
+  <path fill="#7b6a6e" d="M 162 214 L 158 150 L 218 174 Z"/>
+  <path fill="#4b5563" stroke="#4b5563" stroke-width="10" stroke-linejoin="round" d="M 362 236 L 370 128 L 268 172 Z"/>
+  <path fill="#7b6a6e" d="M 350 214 L 354 150 L 294 174 Z"/>
+  <!-- head -->
+  <path fill="#566070" d="M 256 166 C 346 166 404 212 404 274 C 404 350 344 398 256 398 C 168 398 108 350 108 274 C 108 212 166 166 256 166 Z"/>
+  <!-- lighter muzzle -->
+  <path fill="#6d7888" d="M 172 324 C 172 292 208 284 256 284 C 304 284 340 292 340 324 C 340 368 304 392 256 392 C 208 392 172 368 172 324 Z"/>
+  <!-- brows -->
+  <path d="M 178 240 C 192 230 210 230 224 238 M 288 238 C 302 230 320 230 334 240" stroke="#3a424f" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <!-- eyes -->
+  <ellipse cx="206" cy="262" rx="12" ry="13" fill="#2a1d17"/>
+  <ellipse cx="306" cy="262" rx="12" ry="13" fill="#2a1d17"/>
+  <circle cx="210" cy="257" r="4" fill="#fff"/>
+  <circle cx="310" cy="257" r="4" fill="#fff"/>
+  <!-- nose -->
+  <path fill="#14161b" d="M 224 304 C 224 290 240 284 256 284 C 272 284 288 290 288 304 C 288 320 272 328 256 328 C 240 328 224 320 224 304 Z"/>
+  <ellipse cx="246" cy="295" rx="8" ry="3.5" fill="#fff" opacity="0.3"/>
+  <!-- mouth -->
+  <path d="M 256 328 L 256 346 M 256 346 C 240 364 214 362 204 348 M 256 346 C 272 364 298 362 308 348" stroke="#14161b" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- chain collar and tag -->
+  <path fill="#c3c9d3" d="M 150 396 C 204 424 308 424 362 396 L 368 414 C 310 444 202 444 144 414 Z"/>
+  <circle cx="256" cy="446" r="14" fill="#9aa3b2"/>
+  <circle cx="256" cy="446" r="5" fill="#e6e9ef"/>
+</svg>

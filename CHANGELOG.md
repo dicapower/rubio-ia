@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Logos of Rubio (Rubio-IA) and Noah (noah), plus the shared social preview image and Roma. See `assets/BRAND.md`.
+
 ## v0.1.1
 
 - `migrate` no longer suggests `--plugins` when you already passed it.
