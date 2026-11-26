@@ -56,6 +56,10 @@ Una skill con el mismo nombre que hayas escrito tú nunca se sobrescribe ni se e
 
 Lo pequeño se hace sin más. Lo mediano recibe un plan de cinco líneas como máximo. Lo grande o de riesgo sigue explorar, proponer (aprobarás antes de que se construya nada), especificar y tareas, aplicar, verificar. Los cambios de alto riesgo pasan por una revisión independiente con lista de hallazgos y una sola ronda de corrección como máximo. Las notas van a noah si está disponible; si no, a `docs/plans/<cambio>.md`.
 
+## Funciona con noah
+
+[noah](https://github.com/dicapower/noah) es la memoria; Rubio-IA le dice al agente cómo trabajar y cuándo usarla. El núcleo solo nombra herramientas de noah (`mem_context`, `mem_search`, `mem_get`, `mem_save`, `mem_forget`) y un test lo garantiza. Sin noah esa sección se ignora y los planes van a `docs/plans/<cambio>.md`. Rubio-IA nunca toca la base de datos de noah, y noah nunca edita las instrucciones de tu agente.
+
 ## Si vienes de Gentle-AI
 
 ```sh

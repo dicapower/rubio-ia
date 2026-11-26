@@ -56,6 +56,10 @@ A skill with the same name that you wrote yourself is never overwritten or remov
 
 Small changes are just done. Medium ones get a plan of at most five lines. Large or risky ones follow explore, propose (you approve before anything is built), spec and tasks, apply, verify. High-risk changes get an independent review with a findings list and at most one correction round. Notes go to noah when available, otherwise to `docs/plans/<change>.md`.
 
+## Works with noah
+
+[noah](https://github.com/dicapower/noah) is the memory; Rubio-IA tells the agent how to work and when to use it. The core names only noah's tools (`mem_context`, `mem_search`, `mem_get`, `mem_save`, `mem_forget`) and a test keeps it that way. Without noah that section is ignored and plans go to `docs/plans/<change>.md`. Rubio-IA never touches noah's database, and noah never edits your agent's instructions.
+
 ## Coming from Gentle-AI
 
 ```sh
