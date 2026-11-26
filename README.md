@@ -6,6 +6,46 @@ Rubio-IA writes one small block into the global instructions of Claude Code and 
 
 Go, standard library only. No network, no telemetry, no cgo. Apache-2.0, DICA POWER OÜ. [Español](README.es.md)
 
+## noah and Rubio-IA: what they are and how they fit
+
+Two small tools with different jobs. They work best together, and each works alone.
+
+| | noah | Rubio-IA |
+|---|---|---|
+| What it is | A memory: a notebook on your computer that your agent saves to and searches | A working agreement: a short block in your agent's instructions |
+| It answers | "What did we decide last week?" | "How should I work here, and when do I use my memory?" |
+| Without the other | Works. The agent saves when it thinks of it | Works. Its memory rules are ignored and plans go to `docs/plans/` |
+
+```mermaid
+flowchart LR
+  R["Rubio-IA<br/>how to work<br/>~470 tokens"] -->|rules| A["Your agent<br/>Claude Code or Cursor"]
+  A <-->|save and search| N["noah<br/>what to remember<br/>local SQLite file"]
+```
+
+Rubio-IA tells the agent when to look things up and what is worth saving; noah keeps it between sessions. Neither edits the other's files, and neither uses the network.
+
+## Quick start (about 3 minutes)
+
+**1. Install both.** macOS and Linux:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/dicapower/noah/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/dicapower/rubio-ia/main/install.sh | sh
+```
+
+Windows (PowerShell, no admin needed):
+
+```powershell
+irm https://raw.githubusercontent.com/dicapower/noah/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/dicapower/rubio-ia/main/install.ps1 | iex
+```
+
+**2. Connect noah to your agent.** Claude Code: `claude mcp add noah --scope user -- noah mcp`. Cursor: run `noah setup` and follow what it prints (it never edits your configuration).
+
+**3. Add the working agreement.** `rubio setup` (answers in the language you write in) or `rubio setup --lang es-ES` for Spanish from Spain.
+
+Open a new terminal if a command is not found, restart your agent, and check with `noah doctor` and `rubio doctor`. Then just work: *"remember that we use Firebase Auth for login"*. Changing your mind is safe: `rubio remove` takes the agreement out, and every change is backed up first (`rubio restore`).
+
 ## Install
 
 ```sh
@@ -17,6 +57,12 @@ Homebrew:
 ```sh
 brew tap dicapower/rubio-ia https://github.com/dicapower/rubio-ia
 brew install dicapower/rubio-ia/rubio
+```
+
+Windows without Scoop (PowerShell):
+
+```powershell
+irm https://raw.githubusercontent.com/dicapower/rubio-ia/main/install.ps1 | iex
 ```
 
 Scoop (Windows):
@@ -55,10 +101,6 @@ A skill with the same name that you wrote yourself is never overwritten or remov
 ## rubio-plan
 
 Small changes are just done. Medium ones get a plan of at most five lines. Large or risky ones follow explore, propose (you approve before anything is built), spec and tasks, apply, verify. High-risk changes get an independent review with a findings list and at most one correction round. Notes go to noah when available, otherwise to `docs/plans/<change>.md`.
-
-## Works with noah
-
-[noah](https://github.com/dicapower/noah) is the memory; Rubio-IA tells the agent how to work and when to use it. The core names only noah's tools (`mem_context`, `mem_search`, `mem_get`, `mem_save`, `mem_forget`) and a test keeps it that way. Without noah that section is ignored and plans go to `docs/plans/<change>.md`. Rubio-IA never touches noah's database, and noah never edits your agent's instructions.
 
 ## Coming from Gentle-AI
 
