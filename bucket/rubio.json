@@ -1,0 +1,23 @@
+{
+    "version": "0.1.0",
+    "description": "A short working agreement for AI coding agents",
+    "homepage": "https://github.com/dicapower/rubio-ia",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/dicapower/rubio-ia/releases/download/v0.1.0/rubio-v0.1.0-windows-amd64.zip",
+            "hash": "41c6e6ada13c39b3ddd926d06e4f95ab93eddb5960d6918ff56e669b62554c96",
+            "extract_dir": "rubio-v0.1.0-windows-amd64"
+        }
+    },
+    "bin": "rubio.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/dicapower/rubio-ia/releases/download/v$version/rubio-v$version-windows-amd64.zip",
+                "extract_dir": "rubio-v$version-windows-amd64"
+            }
+        }
+    }
+}
