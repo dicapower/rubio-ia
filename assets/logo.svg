@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Rubio-IA logo: a tan dog with upright ears">
+  <title>Rubio-IA</title>
+  <rect width="512" height="512" rx="96" fill="#e6defa"/>
+  <!-- chest and shoulders -->
+  <path fill="#c98a4b" d="M 128 512 C 128 430 170 392 256 392 C 342 392 384 430 384 512 Z"/>
+  <path fill="#ecd2a8" d="M 220 512 C 222 452 238 420 256 420 C 274 420 290 452 292 512 Z"/>
+  <!-- ears (upright) -->
+  <path fill="#c98a4b" stroke="#c98a4b" stroke-width="10" stroke-linejoin="round" d="M 156 236 L 128 66 L 252 160 Z"/>
+  <path fill="#7a4a26" d="M 164 206 L 148 108 L 224 164 Z"/>
+  <path fill="#c98a4b" stroke="#c98a4b" stroke-width="10" stroke-linejoin="round" d="M 356 236 L 384 66 L 260 160 Z"/>
+  <path fill="#7a4a26" d="M 348 206 L 364 108 L 288 164 Z"/>
+  <!-- head -->
+  <ellipse cx="256" cy="272" rx="112" ry="108" fill="#d99a58"/>
+  <!-- forehead blaze shading -->
+  <path fill="#e8b676" d="M 256 168 C 276 190 282 226 272 258 L 240 258 C 230 226 236 190 256 168 Z"/>
+  <!-- dark muzzle -->
+  <path fill="#3b2b26" d="M 198 316 C 198 282 224 272 256 272 C 288 272 314 282 314 316 C 314 360 290 384 256 384 C 222 384 198 360 198 316 Z"/>
+  <!-- dark eye lines -->
+  <path d="M 190 262 C 200 252 214 252 224 260 M 288 260 C 298 252 312 252 322 262" stroke="#3b2b26" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <!-- eyes -->
+  <ellipse cx="207" cy="270" rx="11" ry="13" fill="#1d1512"/>
+  <ellipse cx="305" cy="270" rx="11" ry="13" fill="#1d1512"/>
+  <circle cx="211" cy="265" r="3.5" fill="#fff"/>
+  <circle cx="309" cy="265" r="3.5" fill="#fff"/>
+  <!-- nose -->
+  <path fill="#120d0b" d="M 232 300 C 232 288 244 284 256 284 C 268 284 280 288 280 300 C 280 314 268 322 256 322 C 244 322 232 314 232 300 Z"/>
+  <ellipse cx="248" cy="293" rx="7" ry="3.5" fill="#fff" opacity="0.35"/>
+  <!-- mouth -->
+  <path d="M 256 322 L 256 340 M 256 340 C 244 356 228 356 220 346 M 256 340 C 268 356 284 356 292 346" stroke="#120d0b" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- collar and tag -->
+  <path fill="#aeb7c6" d="M 172 392 C 214 414 298 414 340 392 L 346 410 C 300 434 212 434 166 410 Z"/>
+  <circle cx="256" cy="434" r="15" fill="#4f93de"/>
+  <circle cx="256" cy="434" r="6" fill="#cfe3fa"/>
+</svg>

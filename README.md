@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.svg" alt="Rubio-IA logo" width="140">
+</p>
+
 # Rubio-IA
 
 A short working agreement for your coding agent, in about 470 tokens.
