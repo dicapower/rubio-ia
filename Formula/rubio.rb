@@ -2,28 +2,28 @@
 class Rubio < Formula
   desc "A short working agreement for AI coding agents"
   homepage "https://github.com/dicapower/rubio-ia"
-  version "0.1.0"
+  version "0.1.1"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/dicapower/rubio-ia/releases/download/v0.1.0/rubio-v0.1.0-darwin-arm64.tar.gz"
-      sha256 "7155d0d67520f98408487345447bd0e1dc31b9de84bd83eaf70a55f583b95853"
+      url "https://github.com/dicapower/rubio-ia/releases/download/v0.1.1/rubio-v0.1.1-darwin-arm64.tar.gz"
+      sha256 "e8ab9e0272921341b313fa07fef515d81a74bcf7db46385192bdff17e6523df5"
     end
     on_intel do
-      url "https://github.com/dicapower/rubio-ia/releases/download/v0.1.0/rubio-v0.1.0-darwin-amd64.tar.gz"
-      sha256 "dc5069456d2df47e5452c53a6da6ee3df8e5052073d7eb102a392794ddd14c5b"
+      url "https://github.com/dicapower/rubio-ia/releases/download/v0.1.1/rubio-v0.1.1-darwin-amd64.tar.gz"
+      sha256 "3d1e67f458ea8edc3a5762afb3e09c15d5d88b8051f28dcaa3046c6c6e04d20b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/dicapower/rubio-ia/releases/download/v0.1.0/rubio-v0.1.0-linux-arm64.tar.gz"
-      sha256 "861bc3897c65c72d9cb3ad331cd3376daf9a91aac93a56b533e41d34d0c31f59"
+      url "https://github.com/dicapower/rubio-ia/releases/download/v0.1.1/rubio-v0.1.1-linux-arm64.tar.gz"
+      sha256 "56eb34813a1b8d0ae61b3b30c3524112e1252d499527eac6a354b013293805b9"
     end
     on_intel do
-      url "https://github.com/dicapower/rubio-ia/releases/download/v0.1.0/rubio-v0.1.0-linux-amd64.tar.gz"
-      sha256 "72898a788f2ebd4f24ef8dfd0da0dcccf9e1d1b1d9407daa0305257bada0c0e6"
+      url "https://github.com/dicapower/rubio-ia/releases/download/v0.1.1/rubio-v0.1.1-linux-amd64.tar.gz"
+      sha256 "76bdbe178b6caf6067bcd8183ac06230c313faaf47cfd254e9587a3cecd11c56"
     end
   end
 
