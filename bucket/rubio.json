@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/dicapower/rubio-ia/releases/download/v0.1.1/rubio-v0.1.1-windows-amd64.zip",
-            "hash": "ec8959c78b7815c17445100bee667a3e58cda13ec7764cfeb90d843cf1ebfb69",
+            "hash": "4a8d7bef757e0299545072e1bf9ffe0377768e4268c74d82b2668ccc39fd7993",
             "extract_dir": "rubio-v0.1.1-windows-amd64"
         }
     },
