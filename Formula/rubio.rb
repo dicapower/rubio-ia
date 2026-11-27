@@ -8,22 +8,22 @@ class Rubio < Formula
   on_macos do
     on_arm do
       url "https://github.com/dicapower/rubio-ia/releases/download/v0.1.1/rubio-v0.1.1-darwin-arm64.tar.gz"
-      sha256 "169caddf1054a9b095685ddf935bfd65a93cb5c8758146abb25b48b59ff00422"
+      sha256 "b96d38ffd3ef2d72b058ab080de74ca82e416aa9995d580ba6d8edf52c3b2114"
     end
     on_intel do
       url "https://github.com/dicapower/rubio-ia/releases/download/v0.1.1/rubio-v0.1.1-darwin-amd64.tar.gz"
-      sha256 "8957e33fbeb17cb20ef5cd939b4edbf7a95ec41eadc3d26ead5576e5b7a23710"
+      sha256 "8b9d9b7538caf9349e704ed656296fef417a5185c93a7dadb255090f932a9371"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/dicapower/rubio-ia/releases/download/v0.1.1/rubio-v0.1.1-linux-arm64.tar.gz"
-      sha256 "11a28814dbc5e2c67aac6e95b3c38220072933f6b8675799caea6ae4a5f9ccb0"
+      sha256 "e618b2b797430ecb1d450f8ec519ae1f682fba24d6f9705095296f33fde97ffb"
     end
     on_intel do
       url "https://github.com/dicapower/rubio-ia/releases/download/v0.1.1/rubio-v0.1.1-linux-amd64.tar.gz"
-      sha256 "1842fedccdda85dcf7085700a3f51ec3c50a09a59a01f3011bd4438447f17f1d"
+      sha256 "ba9aeb96d626e903513cceb6f6625ddef9f30c4cb71c50bc7d4dc6cd4ce52d6e"
     end
   end
 
