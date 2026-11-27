@@ -1,0 +1,40 @@
+name: Bug report
+description: Something does not work as the README says
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Rubio-IA is maintained by one person and does not accept pull requests. Never paste secrets or private notes here.
+  - type: input
+    id: version
+    attributes:
+      label: Rubio-IA version
+      description: Output of `rubio version`
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: System
+      description: macOS, Linux or Windows, and the agent you use
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: What you did
+      description: The exact command or the agent request
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, and what happened
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Output of `rubio doctor`
+      render: text

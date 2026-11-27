@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security problem
+    url: https://github.com/dicapower/rubio-ia/security/policy
+    about: Do not open a public issue for vulnerabilities; follow SECURITY.md.

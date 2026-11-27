@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Issue templates (bug report, question); blank issues are off and security reports are pointed to `SECURITY.md`.
 - `SECURITY.md` (how to report a vulnerability, scope, supported versions). The README says that outside contributions are not accepted.
 - Logos of Rubio (Rubio-IA) and Noah (noah), plus the shared social preview image and Roma. See `assets/BRAND.md`.
 

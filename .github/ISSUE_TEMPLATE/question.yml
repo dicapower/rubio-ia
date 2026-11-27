@@ -1,0 +1,11 @@
+name: Question
+description: How do I do something with Rubio-IA?
+labels: [question]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: Check the README first. Never paste secrets or private notes.
+    validations:
+      required: true
