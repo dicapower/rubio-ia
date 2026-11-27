@@ -122,6 +122,10 @@ Quita los bloques de Gentle-AI de `CLAUDE.md`, desactiva el estilo de salida Gen
 - No puede obligar a un agente a obedecer. Hace que las instrucciones sean lo bastante cortas para que se lean.
 - La memoria necesita [noah](https://github.com/dicapower/noah); sin él esa sección se ignora.
 
+## Contribuciones
+
+Rubio-IA lo mantiene una sola persona y no acepta pull requests ni contribuciones externas. Los informes de errores y las preguntas son bienvenidos como [issues](https://github.com/dicapower/rubio-ia/issues). El código es Apache-2.0, así que puedes hacer tu propio fork.
+
 ## Marca
 
 Los logos, la vista previa compartida y la paleta de colores están descritos en [assets/BRAND.md](assets/BRAND.md) (en inglés).

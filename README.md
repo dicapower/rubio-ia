@@ -122,6 +122,10 @@ It removes the Gentle-AI blocks from `CLAUDE.md`, unsets the Gentleman output st
 - It cannot make an agent obey. It makes the instructions short enough to be read.
 - Memory needs [noah](https://github.com/dicapower/noah); without it that section is ignored.
 
+## Contributing
+
+Rubio-IA is maintained by one person and does not accept pull requests or outside contributions. Bug reports and questions are welcome as [issues](https://github.com/dicapower/rubio-ia/issues). The code is Apache-2.0, so you are free to fork it.
+
 ## Brand
 
 Logos, the shared social preview and the colour palette are described in [assets/BRAND.md](assets/BRAND.md).
